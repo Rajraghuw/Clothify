@@ -49,8 +49,6 @@ const Banner = () => {
                     <p>Get Offers</p>
                   </div>
                 </div>
-
-                
                </div>
           </div>
         </div>

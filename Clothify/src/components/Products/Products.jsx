@@ -88,6 +88,12 @@ const Products = () => {
                 ))
             }
             </div>
+            {/* view all button  */}
+            <div className='flex justify-center mb-20'>
+                <button data-aos="fade-up"
+                 className='text-center mt-10 cursor-pointer
+                 py-2 px-5 bg-primary text-white rounded-md'>View All Button</button>
+            </div>
         </div>
       </div>
       </div>

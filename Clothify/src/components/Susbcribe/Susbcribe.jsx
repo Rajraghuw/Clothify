@@ -18,12 +18,12 @@ const Susbcribe = () => {
       style={Bannerimg}
       >
         <div className='container backdrop-blur-sm py-10'>
-           <div>
+           <div className='space-y-6 max-w-xl mx-auto'>
             <h1 
             className='text-2xl !text-center sm:text-left sm:text-4xl font-serif'
             
             >Get Notified About New Products</h1>
-            <input type="text" data-aos="fade-up" placeholder='Enter your email' className='w-full p-3' />
+            <input type="text" data-aos="fade-up" placeholder='Enter your email' className='w-full p-3 text-black rounded-full'/>
            </div>
         </div>
       </div>

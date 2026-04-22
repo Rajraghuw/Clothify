@@ -1,4 +1,4 @@
-import React, { use, useEffect } from 'react'
+import React, { use, useEffect, useState } from 'react'
 import Navbar from './components/Navbar/Navbar'
 import Hero from './components/Hero/Hero'
 import Products from './components/Products/Products'
@@ -8,6 +8,8 @@ import TopProducts from './components/TopProducts/TopProducts'
 import Banner from './components/Banner/Banner'
 import Susbcribe from './components/Susbcribe/Susbcribe'
 import Testimonials from './components/Testimonials/Testimonials'
+import Footer from './components/Footer/Footer'
+import Popup from './components/popup/Popup'
 const App = () => {
  
   useEffect(() => {
@@ -19,10 +21,17 @@ const App = () => {
     });
     AOS.refreshHard();
   }, [])
+
+  const [OrderPopup, setOrderPopup] = React.useState(false);
  
+  const handleOrderPopup = () => {
+    setOrderPopup(!OrderPopup);
+  };
+
   return (
     <>
-      <Navbar/>
+    <div className='bg-white dark:bg-gray-900 dark:text-white duration-200'>
+      <Navbar handleOrderPopup={handleOrderPopup}/>
       <Hero/>
       <Products/>
       <TopProducts/>
@@ -30,6 +39,9 @@ const App = () => {
       <Susbcribe/>
       <Products/>
       <Testimonials/>
+      <Footer/>
+      <Popup OrderPopup={OrderPopup} setOrderPopup={setOrderPopup}/>
+    </div>
     </>
   )
 }

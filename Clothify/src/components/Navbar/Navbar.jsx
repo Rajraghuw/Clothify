@@ -6,7 +6,7 @@ import DarkMode from './DarkMode';
 import { FaCaretDown } from 'react-icons/fa6';
 
 
-const Navbar = () => {
+const Navbar = ({ handleOrderPopup }) => {
   const DropdownLinks = [
     {
       id: 1,
@@ -81,7 +81,7 @@ const Navbar = () => {
 
             {/* order button */}
             
-               <button onClick={()=> alert('Ordering not available yet')} 
+               <button onClick={()=> handleOrderPopup()} 
                 className='bg-gradient-to-r from-primary to-secondary transition-all duration-200 text-white 
                 py-1 px-4 rounded-full flex items-center gap-3 group
                 '

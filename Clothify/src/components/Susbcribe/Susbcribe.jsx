@@ -9,8 +9,6 @@ const Susbcribe = () => {
         height:"100%",
         width:"100%"
     }
-
-    
   return (
     <>
       <div data-aos="zoom-in"

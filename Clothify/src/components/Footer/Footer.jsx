@@ -1,7 +1,6 @@
 import React from 'react'
 import footerLogo from '../../assets/logo.png'
 import Banner from '../../assets/website/footerpattern.png'
-import { li } from 'framer-motion/client'
 import { FaInstagram, FaLinkedin,
    FaFacebook,FaLocationArrow,FaMobileAlt} from 'react-icons/fa'
 
@@ -23,7 +22,7 @@ const Footer = () => {
           link:"/"
         },
         {
-          About:"About",
+          title:"About",
           link:"/about"
         },
         {

@@ -13,20 +13,20 @@ const Hero = () => {
     {
       id:1,
       image:image1,
-      tital:"Upto 30% Off On All Women's wear",
-      discription:"Lorem ipsum dolor sit amet consectetur adipisicing elit."
+      title:"Upto 30% Off On All Women's wear",
+      description:"Lorem ipsum dolor sit amet consectetur adipisicing elit."
     },
     {
       id:2,
       image:image2,
-      tital:"Upto 70% Off On All products sale",
-      discription:"Lorem ipsum dolor sit amet consectetur adipisicing elit."
+      title:"Upto 70% Off On All products sale",
+      description:"Lorem ipsum dolor sit amet consectetur adipisicing elit."
     },
     {
       id:3,
       image:image3,
-      tital:"Upto 50% Off On All Mean's wear",
-      discription:"Lorem ipsum dolor sit amet consectetur adipisicing elit."
+      title:"Upto 50% Off On All Mean's wear",
+      description:"Lorem ipsum dolor sit amet consectetur adipisicing elit."
     }
   ];
 
@@ -73,7 +73,7 @@ const Hero = () => {
                       animate="visible"
                       transition={{ duration: 1 }}
                       className='text-5xl sm:text-6xl lg:text-7xl font-bold'>
-                      {item.tital}
+                      {item.title}
                     </motion.h1>
 
                     <motion.p
@@ -82,7 +82,7 @@ const Hero = () => {
                       animate="visible"
                       transition={{ duration: 1, delay: 0.2 }}
                       className='text-sm'>
-                      {item.discription}
+                      {item.description}
                     </motion.p>
 
                     <motion.div
